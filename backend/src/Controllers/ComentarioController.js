@@ -2,10 +2,10 @@ const connection = require('../database/connection');
 const fs = require('fs');
 const TextToSpeechV1 = require('ibm-watson/text-to-speech/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
-
+require('dotenv').config;
 const textToSpeech = new TextToSpeechV1({
-    authenticator: new IamAuthenticator({ apikey: '9YhB_xq8T70uW1AKafgnKL6P4yZfXG_4hyNINu61fQvL' }),
-    url: 'https://api.us-south.text-to-speech.watson.cloud.ibm.com/instances/2fe32899-7b2a-4417-aaa9-5766e88c61c4'
+    authenticator: new IamAuthenticator({ apikey: process.env.API_KEY }),
+    url: process.env.API_URL
   });
 
 
