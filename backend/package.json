@@ -1,0 +1,21 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "Projeto desenvolvido para processo seletivo da smarkio",
+  "main": "index.js",
+  "scripts": {
+    "start": "nodemon src/index.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "ibm-watson": "^5.6.0",
+    "knex": "^0.21.1",
+    "mediaserver": "^0.1.1",
+    "mysql": "^2.18.1",
+    "nodemon": "^2.0.4",
+    "serve-index": "^1.9.1"
+  }
+}

@@ -1,0 +1,88 @@
+.App {
+  text-align: center;
+  height: 100vh;
+  background-color: rgb(245,245,245);
+}
+
+.content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 100%;
+}
+
+.content .input-text{
+  width: 40%;
+  padding-right: 10%;
+  height: 90%;
+  border-right: 2px solid rgb(186,186,186);
+}
+
+.content .input-text h1{
+  margin-right: 50%;
+}
+
+.content .input-text .input-form{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  width: 100%;
+  
+}
+.content .input-text .input-form form{
+  width: 100%;
+}
+
+
+.content .input-text .input-form form textarea{
+  border-radius: 8px;
+  resize:none;
+  margin-bottom: 10px;
+  width: 80%;
+}
+
+.content .input-text .input-form button{
+  width: 80%;
+  background-color: rgb(218,218,218);
+  border-radius: 5px;
+  height: 30px;
+}
+
+.content .comments{
+  width: 40%;
+  height: 90%;
+  text-align: left;
+}
+
+.content .comments h1{
+  margin-left: 7%;
+}
+
+.comments-list{
+  list-style-type: none;
+}
+
+.comments-list li{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: left;
+  width: 80%;
+  margin-bottom: 20px;
+}
+
+.comments-list li p{
+  width: 80%;
+  min-height: 20px;
+  margin-right: 15px;
+}
+
+.comments-list li button{
+  width: 15%;
+  border-radius: 5px;
+  background-color: rgb(218,218,218);
+  font-weight: bold;
+}
+
