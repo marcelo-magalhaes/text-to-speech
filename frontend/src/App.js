@@ -1,12 +1,10 @@
-import React ,{useState, useEffect, useRef}  from 'react';
+import React ,{useState, useEffect}  from 'react';
 import ReactHowler from 'react-howler';
 import './App.css';
 function App() {
   const [comments,setComments] = useState([]);
   const [message,setMessage] = useState('');
   const [play,setPlay] = useState(false);
-  const [song,setSong] = useState('');
-  const url = useRef(null);
   useEffect(() => {
       fetch('http://localhost:3333/list')
       .then(res => res.json())
@@ -15,8 +13,6 @@ function App() {
           setComments(result)
         }
       )
-      
-      
   });
   
   async function handleNewComment(e){
