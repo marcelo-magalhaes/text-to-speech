@@ -2,13 +2,12 @@ const connection = require('../database/connection');
 const fs = require('fs');
 const TextToSpeechV1 = require('ibm-watson/text-to-speech/v1');
 const { IamAuthenticator } = require('ibm-watson/auth');
-require('dotenv').config;
 const textToSpeech = new TextToSpeechV1({
     authenticator: new IamAuthenticator({ apikey: process.env.API_KEY }),
     url: process.env.API_URL
   });
 
-
+  
 module.exports = {
     async postar(req,res){
         const {message} = req.body;
