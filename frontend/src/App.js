@@ -13,7 +13,7 @@ function App() {
           setComments(result)
         }
       )
-  });
+  }); 
   
   async function handleNewComment(e){
       e.preventDefault();
